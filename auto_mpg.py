@@ -53,16 +53,16 @@ model.compile(loss='mse',
 
 
 X_train, y_train = np.array(X_train) , np.array(y_train)
+print(X_train)
+#history = model.fit(X_train, y_train, epochs=500, verbose=2)
 
-history = model.fit(X_train, y_train, epochs=500, verbose=2)
-
-mae, loss, score = model.evaluate(X_test, y_test)
-print(score * 100)
-print(loss)
+#mae, loss, score = model.evaluate(X_test, y_test)
+#print(score * 100)
+#print(loss)
 
 #for prediction
-predictor = model.predict(X_test)
-print(predictor)
+#predictor = model.predict(X_test)
+#print(predictor)
 
 
 
